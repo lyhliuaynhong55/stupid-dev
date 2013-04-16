@@ -1,0 +1,11 @@
+#!/bin/bash
+
+[ -e Makefile ] && mv Makefile Makefile.bak
+cp Makefile.in Makefile
+
+echo >> Makefile
+echo "# auto generated rules" >> Makefile
+
+for src in `ls *.c`; do
+    gcc -MM $src >> Makefile
+done

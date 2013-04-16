@@ -1,0 +1,13 @@
+TCP
+IP:
+	ip options
+	fragmentation
+	forward, NAT
+ICMP
+DHCP
+
+timer for asynchronous events
+      TCP
+      delay for arp(now it's delayed by normal CPU calc cycle)
+
+notification chain for waiting events
